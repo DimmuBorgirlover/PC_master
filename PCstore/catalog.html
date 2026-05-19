@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — PC Master</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="video/bg.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="nav-container">
+
+            <a href="index.html" class="logo">
+                PC Master
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="auth.html">Вхід</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h3>Категорії</h3>
+
+            <ul>
+                <li><a href="category.html">Відеокарти</a></li>
+                <li><a href="laptops.html">Ноутбуки</a></li>
+                <li><a href="cpuu.html">Процесори</a></li>
+                <li><a href="monitors.html">Монітори</a></li>
+                <li><a href="fullpc.html">Збірки ПК</a></li>
+            </ul>
+
+        </aside>
+
+        <!-- CONTENT -->
+        <main class="content-area">
+
+            <h1>Повний каталог заліза</h1>
+
+            <div class="product-grid">
+                
+                <div class="card">
+
+                    <img src="img/gpu.png" alt="Відеокарта">
+
+                    <h3>
+                        <a href="product.html">
+                            NVIDIA RTX 4080
+                        </a>
+                    </h3>
+
+                    <p>
+                        Потужність, яка змусить твій монітор плакати від щастя.
+                    </p>
+
+                    <p>
+                        <strong>45 000 грн</strong>
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="addToCart('RTX 4080', 45000)"
+                    >
+                        Купити
+                    </button>
+
+                </div>
+
+                <!-- RTX 4070 Ti -->
+    <div class="card">
+
+        <img src="img/rtx4070ti.png" alt="RTX 4070 Ti">
+
+        <h3>NVIDIA RTX 4070 Ti</h3>
+
+        <p>
+            Максимальна продуктивність для QHD-геймінгу.
+        </p>
+
+        <p>
+            <strong>39 000 грн</strong>
+        </p>
+
+        <button
+            class="btn"
+            onclick="addToCart('RTX 4070 Ti', 39000)"
+        >
+            Купити
+        </button>
+
+    </div>
+
+    <!-- RTX 4090 -->
+    <div class="card">
+
+        <img src="img/rtx4090.png" alt="RTX 4090">
+
+        <h3>NVIDIA RTX 4090</h3>
+
+        <p>
+            Абсолютний монстр для ультра налаштувань.
+        </p>
+
+        <p>
+            <strong>89 000 грн</strong>
+        </p>
+
+        <button
+            class="btn"
+            onclick="addToCart('RTX 4090', 89000)"
+        >
+            Купити
+        </button>
+
+    </div>
+
+    <!-- RX 7900 XTX -->
+    <div class="card">
+
+        <img src="img/rx7900.png" alt="RX 7900 XTX">
+
+        <h3>AMD RX 7900 XTX</h3>
+
+        <p>
+            Флагман AMD для сучасних ігор.
+        </p>
+
+        <p>
+            <strong>52 000 грн</strong>
+        </p>
+
+        <button
+            class="btn"
+            onclick="addToCart('RX 7900 XTX', 52000)"
+        >
+            Купити
+        </button>
+
+    </div>
+
+                <div class="card">
+
+                    <img src="img/cpui9.webp" alt="Процесор">
+
+                    <h3>Intel Core i9-13900K</h3>
+
+                    <p>
+                        Швидший за твої думки про дедлайн.
+                    </p>
+
+                    <p>
+                        <strong>22 000 грн</strong>
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="addToCart('Intel Core i9', 22000)"
+                    >
+                        Купити
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="img/amd777.png" alt="AMD Ryzen 7 7700">
+
+                    <h3>AMD Ryzen 7 7700</h3>
+
+                    <p>
+                      Енергоефективний вибор для збірок, де важлива економія енергії.  
+                    </p>
+
+                    <p>
+                        <strong>10 000 грн</strong>
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="addToCart('Компютер HEXO', 10000)"
+                    >
+                        Купити
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="img/laptop.png" alt="Ноутбук">
+
+                    <h3>ASUS ROG Strix G16</h3>
+
+                    <p>
+                        Ігровий ноутбук для максимального FPS.
+                    </p>
+
+                    <p>
+                        <strong>68 000 грн</strong>
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="addToCart('ASUS ROG Strix G16', 68000)"
+                    >
+                        Купити
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="img/monitor.png" alt="Монітор">
+
+                    <h3>Samsung Odyssey G5</h3>
+
+                    <p>
+                        165 Гц для плавного геймінгу.
+                    </p>
+
+                    <p>
+                        <strong>12 500 грн</strong>
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="addToCart('Samsung Odyssey G5', 12500)"
+                    >
+                        Купити
+                    </button>
+
+                </div>
+
+                
+             <div class="card">
+
+                    <img src="img/hexxo.png" alt="Комп'ютер HEXO">
+
+                    <h3>Комп'ютер HEXO</h3>
+
+                    <p>
+                        NVIDIA RTX 4070 Ti / 
+                        AMD Ryzen 7 7700 /
+                        32 ГБ (DDR5) /  
+                        1024 ГБ (SSD) 
+                    </p>
+
+                    <p>
+                        <strong>99 999 грн</strong>
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="addToCart('Компютер HEXO', 99999)"
+                    >
+                        Купити
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="img/evolve.png" alt="Комп'ютер EVOLVE">
+
+                    <h3>Комп'ютер EVOLVE</h3>
+
+                    <p>
+                        NVIDIA RTX 4090 /
+                        Intel Core i9-13900K /
+                        64 ГБ (DDR5) /
+                        2048 ГБ (SSD)
+                    </p>
+
+                    <p>
+                        <strong>199 999 грн</strong>
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="addToCart('Компютер EVOLVE', 199999)"
+                    >
+                        Купити
+                    </button>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="img/ram.png" alt="RAM">
+
+                    <h3>Kingston Fury 32GB</h3>
+
+                    <p>
+                        DDR5 пам'ять для топових збірок.
+                    </p>
+
+                    <p>
+                        <strong>10 000 грн</strong>
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="addToCart('Kingston Fury 32GB', 10000)"
+                    >
+                        Купити
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 PC Master Store. Всі права захищені.
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

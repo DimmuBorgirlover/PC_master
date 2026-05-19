@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Master — Магазин твоєї мрії</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="video/bg.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">PC Master</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="auth.html">Вхід</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <aside class="sidebar">
+            <h3>Категорії</h3>
+            <ul>
+                <li><a href="category.html">Відеокарти</a></li>
+                <li><a href="laptops.html">Ноутбуки</a></li>
+                <li><a href="cpuu.html">Процесори</a></li>
+                <li><a href="monitors.html">Монітори</a></li>
+                <li><a href="fullpc.html">Збірки ПК</a></li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+    <h1>Відеокарти NVIDIA та AMD</h1>
+    <p>Виберіть найкращу графіку для вашого ПК.</p>
+    
+   <div class="product-grid">
+
+    <!-- RTX 4070 Ti -->
+    <div class="card">
+
+        <img src="img/rtx4070ti.png" alt="RTX 4070 Ti">
+
+        <h3>NVIDIA RTX 4070 Ti</h3>
+
+        <p>
+            Максимальна продуктивність для QHD-геймінгу.
+        </p>
+
+        <p>
+            <strong>39 000 грн</strong>
+        </p>
+
+        <button
+            class="btn"
+            onclick="addToCart('RTX 4070 Ti', 39000)"
+        >
+            Купити
+        </button>
+
+    </div>
+
+    <!-- RTX 4090 -->
+    <div class="card">
+
+        <img src="img/rtx4090.png" alt="RTX 4090">
+
+        <h3>NVIDIA RTX 4090</h3>
+
+        <p>
+            Абсолютний монстр для ультра налаштувань.
+        </p>
+
+        <p>
+            <strong>89 000 грн</strong>
+        </p>
+
+        <button
+            class="btn"
+            onclick="addToCart('RTX 4090', 89000)"
+        >
+            Купити
+        </button>
+
+    </div>
+
+    <!-- RX 7900 XTX -->
+    <div class="card">
+
+        <img src="img/rx7900.png" alt="RX 7900 XTX">
+
+        <h3>AMD RX 7900 XTX</h3>
+
+        <p>
+            Флагман AMD для сучасних ігор.
+        </p>
+
+        <p>
+            <strong>52 000 грн</strong>
+        </p>
+
+        <button
+            class="btn"
+            onclick="addToCart('RX 7900 XTX', 52000)"
+        >
+            Купити
+        </button>
+
+    </div>
+
+                <div class="card">
+
+                    <img src="img/gpu.png" alt="Відеокарта">
+
+                    <h3>
+                        <a href="product.html">
+                            NVIDIA RTX 4080
+                        </a>
+                    </h3>
+
+                    <p>
+                        Потужність, яка змусить твій монітор плакати від щастя.
+                    </p>
+
+                    <p>
+                        <strong>45 000 грн</strong>
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="addToCart('RTX 4080', 45000)"
+                    >
+                        Купити
+                    </button>
+</div>
+    </div>
+
+</main>
+    </div>
+
+    <footer>
+        <p>© 2026 PC Master Store. Всі права захищені. Не намагайтеся розігнати блок живлення вдома.</p>
+        <p>
+            <a href="#" style="color: #38bdf8;">Facebook</a> | 
+            <a href="#" style="color: #38bdf8;">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
