@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Кошик — PC Master</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="video-bg"><video autoplay muted loop><source src="video/bg.mp4" type="video/mp4"></video></div>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">PC Master</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <main class="content-area">
+            <h1>Ваш кошик</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Ціна</th>
+                        <th>Дія</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-table-body">
+                    </tbody>
+            </table>
+            <div style="text-align: right; margin-top: 20px;">
+                <h2>Разом до сплати: <span id="total-price" style="color:#38bdf8;">0 грн</span></h2>
+                <button class="btn" style="padding: 15px 30px;" onclick="checkout()">
+    Оформити замовлення
+</button>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

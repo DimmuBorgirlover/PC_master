@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вхід — PC Master</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="video-bg"><video autoplay muted loop><source src="video/bg.mp4" type="video/mp4"></video></div>
+    
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">PC Master</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="auth.html">Вхід</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <main class="content-area" style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
+            <div style="background: rgba(30, 41, 59, 0.9); padding: 40px; border-radius: 15px; border: 1px solid #38bdf8; width: 100%; max-width: 400px;">
+                <h1 style="text-align: center; margin-bottom: 20px;">Вхід у кабінет</h1>
+                <form onsubmit="validateAuth(event)">
+                    <input type="email" placeholder="Ваш Email" required style="margin-bottom: 15px;">
+                    <input type="password" placeholder="Пароль" required style="margin-bottom: 20px;">
+                    <button type="submit" class="btn" style="width: 100%;">Увійти</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
